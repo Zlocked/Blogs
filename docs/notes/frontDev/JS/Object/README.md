@@ -1,5 +1,5 @@
 ---
-title: '前端笔记'
+title: 'Javascript'
 sidebar: true
 isShowComments: false
 publish: false

@@ -7,15 +7,15 @@ tags:
  - js-Object
 ---
 
-## 对象-属性-描述符
+# 对象-属性-描述符
 
-### 属性描述符
+## 属性描述符
 
 是内部特性；描述属性特征；无法直接访问；由引擎实现；数据描述符和访问描述符不可同时定义
 
-#### 数据描述符
+### 数据描述符
 
-##### `[[Configurable]] [[Enumerable]] [Writable]] [[Value]]`
+#### `[[Configurable]] [[Enumerable]] [Writable]] [[Value]]`
 
 > 通过`Object.defineProperty()`定义属性时修改，默认值为`false`
 
@@ -73,9 +73,9 @@ console.log(objW.key); // keyV
 
 
 
-#### 存取描述符
+### 存取描述符
 
-##### `[[Configurable]] [[Enumerable]] [[Get]] [[Set]]`
+#### `[[Configurable]] [[Enumerable]] [[Get]] [[Set]]`
 
 > 无法直接定义，可通过`Object.defineProperty()`定义
 
@@ -139,13 +139,13 @@ objAll.year = 2021;
 console.log(objAll.edition); // 21
 ```
 
-### 定义多个属性
+## 定义多个属性
 
-##### `Object.defineProperty()`
+#### `Object.defineProperty()`
 
-### 定义多个属性
+## 定义多个属性
 
-##### `Object.defineProperties()`
+#### `Object.defineProperties()`
 
 > `Object.defineProperties({}, {})`-参一：目标对象；参二：描述符对象
 
@@ -176,9 +176,9 @@ console.log(objMultiDefine); // {} -原因：所有属性的enumberable描述符
 
 
 
-### 获取属性描述符
+## 获取属性描述符
 
-##### `Object.getOwnPropertyDescriptor()`
+#### `Object.getOwnPropertyDescriptor()`
 
 > `Object.getOwnPropertyDescriptor()`-获取某个属性的描述符
 >
@@ -217,7 +217,7 @@ console.log(descriptor.enumerable); // false
 console.log(typeof descriptor.get); // function
 ```
 
-##### `Object.getOwnPropertyDescriptors`
+#### `Object.getOwnPropertyDescriptors`
 
 > `Object.getOwnPropertyDescriptors()`-ES6 --获取对象的所有属性的描述符
 
